@@ -1,0 +1,334 @@
+<!doctype html>
+<html><html lang="en" class="no-js">
+	<head>
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+ 
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>HTML5, CSS3 - GIT Y GITHUB</title>
+        <title>Botón subir (top)</title>
+  <!--Librería css de Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Tus demas hojas de estilos css -->
+
+     
+        <style>
+			.boxContenedor {
+width:auto;
+height:auto;
+				}
+		.demo-1 .main-title {
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+}
+		.main-title {
+	position: absolute;
+	margin: 0;|
+	padding: 0;
+	color: #f9f1e9;
+	text-align: left;
+	top: 16.5%;
+	left: 17%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+.main-title2 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: left;
+	top: 16.5%;
+	right: -17%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+			
+			
+			.large-header {
+	position: relative;
+	width: 100%;
+	height:600px;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+		.demo-1 .large-header {
+			background-color:transparent;
+			width: auto;
+			height: auto;
+}
+			.pie{align-content: center;
+			background-color:cornflowerblue;
+				width: auto;
+			height: auto;
+				
+			}			
+		</style>      
+		<link rel="stylesheet" href="css para scroll.css">  
+		<script src="http://code.jquery.com/jquery-latest.js"></script>   
+
+	<script src='js para scroll.js'></script>
+		
+		<nav>  
+
+				
+<ul>
+<p style="margin-left:0px; margin-top: -40px"><img  style="width: 400px;"id="logo" src="unad.png"></p>
+					</ul>
+			<ul>
+				<p style="margin-top: 50px;">
+				
+<FORM  method=GET action="http://www.google.com/search">
+<TABLE bgcolor="#FFFFFF" style="margin-left: 1000px;"><tr><td>
+
+<INPUT TYPE=text name=q size=31 maxlength=255 value="">
+<INPUT TYPE=hidden name=hl value=es>
+<INPUT type=submit name=btnG VALUE="Búsqueda Google">
+</td></tr></TABLE>
+</FORM>
+ </p>
+	</ul> 
+	
+<!-- A
+
+				<!--<ul>
+
+					
+
+					<li><a href="#">Equipo</a></li>
+
+					<li><a href="#">Contacto</a></li>
+
+				</ul>-->
+
+			<style>
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:auto;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:800px; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:cornflowerblue;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:darkcyan;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+				<ul class="nav">
+					<li><a href="Untitled-1.html">INICIO</a></li>
+					<li><a href="lecturas.html">LECTURAS</a>
+						<ul>
+							<li><a href="">LECTURA 1</a></li>
+							<li><a href="">LECTURA 2</a></li>
+							<li><a href="">LECTURA 3</a></li>
+							<li><a href="">LECTURA 4</a></li>
+							<li><a href="">LECTURA 5</a>
+								
+							</li>
+						</ul>
+					</li>
+					<li><a href="multimedia.html">MULTIMEDIA</a>
+						<ul>
+							<li><a href="">VIDEO</a></li>
+							<li><a href="">AUDIO</a></li>
+							
+						</ul>
+					</li>
+					<li><a href="actividades.html">ACTIVIDADES</a></li>
+					<li><a href="autores.html">AUTORES</a></li>
+				
+			</nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+		
+			
+			<a href="#" id="js_up" class="boton-subir">
+  <!-- link del icono http://fontawesome.io/icon/rocket/ -->
+  <i class="fa fa-rocket" aria-hidden="true"></i>
+</a>
+		<div><!--<canvas id="demo-canvas"> </canvas> -->
+					
+		<div class="boxContenedor">
+			
+			
+		<div class="container demo-1" >
+			 
+			
+			<div class="content">  
+
+				<div id="large-header" class="large-header">
+					
+					
+					<div align="left" >
+						
+						<div class="contenedor" >
+		
+					
+		<p style="width:300px;height: 300px;overflow: auto;margin-top: 80px;margin-left: -100px"><a class="twitter-timeline" href="https://twitter.com/unadibague?ref_src=twsrc%5Etfw">Tweets por unadibague</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </p>
+		  
+						
+						</div>       </div>
+					 
+						<ul><p style="margin-left: 350px;margin-top: -300px"> 
+					Se espera con este curso llegar a tener un conocimiento más claro y fácil de aplicar para la realización de futuras actividades como la creación de un repositorio o ya sea la utilización de herramientas como css3, html5 y estructuras que se manejen para el diseño de sitio web.
+						</p><br><br>
+							
+		<p style="margin-left: -50px;margin-top: -50px;"><img  style="width: 400px;margin-left: 400px;margin-top: 100px;" alt="Cambiar imagen" onmouseout="this.src='git-github-logonegro.jpg'" onmouseover="this.src='git-github-logo.jpg'" src="git-github-logonegro.jpg" ></p>
+		
+					
+							<p style="margin-left: 800px;margin-top: -50px">
+							Objetivo específico 1: 
+Investigar e implementar lo que es  GIT y GITHUB.<p></p>
+					</ul>
+							
+					
+					<ul>   <!--  <p><img alt="Cambiar imagen" height="198" onmouseout="this.src='https://www.emiweb.es/medias/images/imagen1.png';" onmouseover="this.src='https://www.emiweb.es/medias/images/imagen2.png';" src="https://www.emiweb.es/medias/images/imagen1.png" /></p>   -->
+		<p style="margin-left: 900px;margin-top: 0px;"><img alt="Cambiar imagen" style="width: 400px;" onmouseout="this.src='html5-css3negro.png'" onmouseover="this.src='html5-css3.png'" src="html5-css3negro.png"><br> <br><br> <br><br></p>
+				
+					<p style="margin-left: 350px;margin-top: -220px">
+					
+Objetivo específico 2: 
+Implementar conocimientos sobre las herramientas <br> y estructuras de diseño web (HTML5, CSS3).
+<br> <br> <br>
+Objetivo específico 3: 
+Crear un Objeto Virtual de Información. <br> <br><br> <br><br> <br>
+						</p></ul></div>
+				
+				<div  > <table width="1100px" border="1" style= "border-collapse: collapse;" align="center" >
+  <tbody>
+    <tr >
+      <th scope="col" style="background-color:cornflowerblue;color:white; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif'" >CODIGO CURSO</th>
+      <th scope="col" style="background-color:cornflowerblue;  color:white; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif'" >NOMBRE CURSO</th>
+      <th scope="col" style="background-color:cornflowerblue ; color:white; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif'" >PROGRAMA</th>
+      <th scope="col" style="background-color:cornflowerblue ; color:white; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif'" >NOMBRE TEMÁTICA GENERAL PARA OVA</th>
+      <th scope="col" style="background-color:cornflowerblue; color:white; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif'" >BREVE DESCRIPCIÓN DE LA TEMÁTICA GENERAL</th>
+      <th scope="col" style="background-color:cornflowerblue; color:white; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif'" >SUBTEMAS RELEVANTES ASOCIADOS A LA TEMÁTICA GENERAL</th>
+    </tr>
+    <tr>
+      <td align="center">301122</td>
+      <td align="center">Diseño de Sitios Web</td>
+      <td align="center">Ingeniería de Sistemas</td>
+      <td align="center">GIT/GITHUB, HTML5 y CSS3</td>
+      <td align="justify">Introducción, profundización e información complementaria sobre el uso de GIT y GITHUB para gestionar proyectos colaborativos de diseño web, HTML5 y CSS3 para creación  de contenidos en formato web (Paginas y Sitios Web) </td>
+      <td align="justify">GIT y GITHUB: Crear un repositorio remoto y clonar en local<br>
+GIT y GITHUB: Crear un repositorio local y clonar en remoto <br>
+GIT y GITHUB: Github Pages<br>
+Estructura básica de html5 (etiquetas, atributos y valores)<br>
+Estructura básica página HTML (HTML, HEAD, BODY)<br>
+Navegación externa e interna (NAV - UL - OL - LI)<br>
+Contenido en HTML ( SECTION, ASIDE, FOOTER, ARTICLE)<br>
+Display: inline, block, inline-block<br>
+Modelo de Caja (top, right, left, bottom) <br>
+CSS3: Estilos internos y Externos  <br>
+Selectores CSS <br>
+Aplicando clases y heredando a tags HTML <br>
+Propiedades básicas de CSS <br>
+Múltiples clases <br>
+Float, Position, Oweflow <br>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+	<br><br>
+	</div>
+					
+				</div>    
+                </div>   
+                </div>
+				  
+		</div>
+		
+		</div> <!-- librerías js -->
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jqu"></script>
+		<!-- script para que funcione al 100% el botón ir arriba -->
+
+		<script>
+//invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+$(window).scroll(function(){
+  if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+    $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+  }else{ // si no
+    $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+  }
+});
+
+//creamos una función accediendo a la etiqueta i en su evento click
+$("#js_up i").on('click', function (e) { 
+  e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+  $("body,html").animate({ // aplicamos la función animate a los tags body y html
+    scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+  },700); //el valor 700 indica que lo ara en 700 mili segundos
+  return false; //rompe el bucle
+});
+</script>
+		
+		
+		<!-- <script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+	
+        
+		<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/demo-1.js"></script>  -->
+		
+		<div class="pie" align="right"><font face="Comic Sans MS,arial" > <h4 align="center" > Creado por Johana Guzmán 2018</h4></font>
+		<footer class="pie"><a href="https://www.contadorvisitasgratis.com" title="contadores de visitas gratis"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=qbgu7as9zmq73u8qptswcmsyz34uum9n" border="0" title="contadores de visitas gratis" alt="contadores de visitas gratis"></a> </footer></div>
+	</body>
+</html>
+
+
