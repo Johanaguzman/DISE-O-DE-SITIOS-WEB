@@ -143,17 +143,18 @@ height:auto;
 
 					<li><a href="#">Contacto</a></li>
 
-				</ul>-->
+	
+-->				</ul>
 <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
 				<ul class="nav">
 					<li><a href="INDEX.html" style="margin-left: 50px;">INICIO</a></li>
 					<li><a href="lecturas.html">LECTURAS</a>
 						<ul>
-							<li><a href="">LECTURA 1</a></li>
-							<li><a href="">LECTURA 2</a></li>
-							<li><a href="">LECTURA 3</a></li>
-							<li><a href="">LECTURA 4</a></li>
-							<li><a href="">LECTURA 5</a>
+							<li><a href="lecturas.html">LECTURA 1</a></li>
+							<li><a href="lecturas1.html">LECTURA 2</a></li>
+							<li><a href="lecturas2.html">LECTURA 3</a></li>
+							<li><a href="lecturas3.html">LECTURA 4</a></li>
+							<li><a href="lecturas5.html">LECTURA 5</a>
 								
 							</li>
 						</ul>
@@ -162,18 +163,23 @@ height:auto;
 						<ul>
 							<li><a href="multimedia.html">VIDEO</a></li>
 							
+							
 						</ul>
 					</li>
 					<li><a href="actividades.html">ACTIVIDADES</a></li>
 					<li><a href="autores.html">AUTORES</a></li>
 				</ul>
-			</nav>	
-			 
+			</nav> 
 		
 	</head>    
 	<body >
 		
-			
+				
+		<!-- código HTMl botón subir (top)-->
+<a href="#" id="js_up" class="boton-subir">
+  <!-- link del icono http://fontawesome.io/icon/rocket/ -->
+  <i class="fa fa-rocket" aria-hidden="true"></i>
+</a>
 		
 	
 		<div><!--<canvas id="demo-canvas"> </canvas> -->
@@ -182,42 +188,54 @@ height:auto;
 			
 			
 		<div class="container demo-1" >
-			 
 			
-			<div class="content">  
+	
 
-				<div id="large-header" class="large-header">
-					
-					
-					<div align="left" >
-						
-						<div class="contenedor" >
-		
-				
-							<a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=CSS">	Ingresar a Quiz </a><br>
-							<a href="https://www.htmlcinco.com/test-cuanto-sabes-de-css3-nivel-1/"> Quiz CSS3 </a>
-							
-<link href="https://www.htmlcinco.com/test-cuanto-sabes-de-html5-nivel-principiante-a-intermedio/"> HTML% Quiz
 	<br><br>
-	</div>
+	<ul><p style="margin-left: 350px;margin-top: 50px;"> 
+					<a  href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=CSS"><h3 align="center">Ingresar a Quiz </h3>	</a><br>
+		<a href="https://www.htmlcinco.com/test-cuanto-sabes-de-html5-nivel-principiante-a-intermedio/"> <h3 align="center">HTML5 Quiz</h3></a>
+						<br>
+		<a href="https://www.htmlcinco.com/test-cuanto-sabes-de-css3-nivel-1/"> <h3 align="center">Quiz CSS3</h3></a>
+		</p></ul>
+		<br>
+							
+		
+		
+					
 					
 				</div>    
                 </div>   
                 </div>
 				  
-			</div></div> </div>
+			
 		
-		</div> <!-- librerías js -->
+		 			  
+		 <!-- librerías js -->
 
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+		<!-- script para que funcione al 100% el botón ir arriba -->
+<script>
+//invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+$(window).scroll(function(){
+  if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+    $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+  }else{ // si no
+    $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+  }
+});
 
-		
-		
-		<!-- <script src="js/TweenLite.min.js"></script>
-		<script src="js/EasePack.min.js"></script>
-	
-        
-		<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/demo-1.js"></script>  -->
+//creamos una función accediendo a la etiqueta i en su evento click
+$("#js_up i").on('click', function (e) { 
+  e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+  $("body,html").animate({ // aplicamos la función animate a los tags body y html
+    scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+  },700); //el valor 700 indica que lo ara en 700 mili segundos
+  return false; //rompe el bucle
+});
+</script>
 		
 		<div class="pie" align="right"><font face="Comic Sans MS,arial" > <h4 align="center" > Creado por Johana Guzmán 2018</h4></font>
 		<footer class="pie"><a href="https://www.contadorvisitasgratis.com" title="contadores de visitas gratis"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=qbgu7as9zmq73u8qptswcmsyz34uum9n" border="0" title="contadores de visitas gratis" alt="contadores de visitas gratis"></a> </footer></div>

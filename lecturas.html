@@ -5,7 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>HTML5, CSS3 - GIT Y GITHUB</title>
-       
+        <!--Librería css de Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Tus demas hojas de estilos css -->
+
   
      
         <style>
@@ -172,6 +175,11 @@ height:auto;
 	<body >
 		
 			
+		<!-- código HTMl botón subir (top)-->
+<a href="#" id="js_up" class="boton-subir">
+  <!-- link del icono http://fontawesome.io/icon/rocket/ -->
+  <i class="fa fa-rocket" aria-hidden="true"></i>
+</a>	
 		
 		
 	
@@ -183,28 +191,23 @@ height:auto;
 		<div class="container demo-1" >
 			 
 			
-			<div class="content">  
+	
 
-				<div id="large-header" class="large-header">
-					
-					
-					<div align="left" >
-						
-						<div class="contenedor" >
+				
 		
 					
-		<ul><p style="margin-left: -50px;margin-top: 50px" align="justify"> 
+		<ul><p style="margin-left: 50px;margin-top: 50px" align="justify"> 
 					Como ya sabemos HTML son las siglas HyperText Markup Language (Lenguaje de marcado de hipertexto) y HTML5 es la quinta versión; al igual que CSS3 son hojas de estilo es cascada (cascading style sheets) entonces en esta sección se busca dar pequeños vistazos de lo que es la estructura del HTML5 y CSS3 al realizar un diseño web.
-						</p><br><br>
-			html trabaja sobre  Firefox 3.5+,  Chrome 3.0+ , Safari 3.1+ , Opera 10.5+ ,IE 9.0+ dicen… , iPhone , iPod Touch , iPad , Android OS 
-			
+						<br><br>
+			html trabaja sobre  Firefox 3.5+,  Chrome 3.0+ , Safari 3.1+ , Opera 10.5+ ,IE 9.0+ dicen… , iPhone , iPod Touch , iPad , Android OS  <br><br> Así es la estructura del HTML5
+			</p>
 			
 							
-		<p style="margin-left: -50px;margin-top: -50px;"><img  style="width: 400px;margin-left: 400px;margin-top: 50px;"  src="html5_doc_sections.gif" ></p>
-		Así e sla estructura del HTML5<p style="margin-left: -50px;margin-top: -100px;"><img  style="width: 400px;margin-left: 400px;margin-top: 50px;"  src="images.png" ></p>
+		<p style="margin-left:-150px;margin-top: -20px;"><img  style="width: 400px;margin-left: 400px;margin-top: 50px;"  src="html5_doc_sections.gif" ></p>
+		<p style="margin-left: 300px;margin-top: -250px;"><img  style="width: 400px;margin-left: 400px;margin-top: 50px;"  src="images.png" ></p>
 					
 					
-							
+			</ul>
 					
 					 <!--  <p><img alt="Cambiar imagen" height="198" onmouseout="this.src='https://www.emiweb.es/medias/images/imagen1.png';" onmouseover="this.src='https://www.emiweb.es/medias/images/imagen2.png';" src="https://www.emiweb.es/medias/images/imagen1.png" /></p>   -->
 		<br> <br><br> <br><br>
@@ -212,10 +215,7 @@ height:auto;
 					
 
 	<br><br>
-	</div>
-		  
-						
-						</div>       </div>
+	
 					 
 						
 					
@@ -223,17 +223,33 @@ height:auto;
                 </div>   
                 </div>
 				  
-		</div>
 		
-		</div> 
+					  
+		 <!-- librerías js -->
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		
-		
-		<!-- <script src="js/TweenLite.min.js"></script>
-		<script src="js/EasePack.min.js"></script>
-	
-        
-		<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/demo-1.js"></script>  -->
+		<!-- script para que funcione al 100% el botón ir arriba -->
+<script>
+//invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+$(window).scroll(function(){
+  if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+    $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+  }else{ // si no
+    $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+  }
+});
+
+//creamos una función accediendo a la etiqueta i en su evento click
+$("#js_up i").on('click', function (e) { 
+  e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+  $("body,html").animate({ // aplicamos la función animate a los tags body y html
+    scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+  },700); //el valor 700 indica que lo ara en 700 mili segundos
+  return false; //rompe el bucle
+});
+</script>
 		
 		<div class="pie" align="right"><font face="Comic Sans MS,arial" > <h4 align="center" > Creado por Johana Guzmán 2018</h4></font>
 		<footer class="pie"><a href="https://www.contadorvisitasgratis.com" title="contadores de visitas gratis"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=qbgu7as9zmq73u8qptswcmsyz34uum9n" border="0" title="contadores de visitas gratis" alt="contadores de visitas gratis"></a> </footer></div>
