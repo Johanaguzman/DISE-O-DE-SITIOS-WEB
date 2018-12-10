@@ -13,6 +13,7 @@ body{
 	font-family: helvetica;
 
 	background:white;
+	width:90%;min-width:600px;max-width:2000px
 
 }
 
